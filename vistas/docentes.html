@@ -1,0 +1,123 @@
+<!doctype html>
+<!-- vista  que contiene los recursos del docente-->
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Actvidades-Calificaciones</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="shortcut icon" href="../img/log1.png">
+        <link rel="stylesheet" href="../css/calificacionActividades.css">
+         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	</head>
+	<body>
+  <!-- barra lateral de menu-->
+    <div class="contenedor-principal-docente">
+    		<header class="green darken-3">
+    			 <ul id="slide-out" class="side-nav fixed green lighten-5">
+                  <img clas="responsive-img" src="../img/logo.jpg">
+          				<li><a href="#crearActividad">Crear Actividad</a></li>
+          				<li><a href="#calificar">Visualizar código</a></li>
+                  <li><a href="#!">Enviar Mensaje Alumno</a></li>
+                  <li><a href="#listaEstudiantes">Ver Lista De Estudiantes</a></li>
+                  <li><a href="index.html">Volver a las noticias</a></li>
+        		</ul>
+    		</header>
+    </div>
+
+    <!-- -->
+        <div class="contenedor-derecho" id = "calificar">
+            <div class="contenedor-superior">
+           
+                <div class="git">
+                  <input id="input-git" type="text" name="usuario-git" placeholder="Usuario gitHub">
+                  <input  id="input-proyecto" type="text" name="nombre-proyecto" placeholder="Nombre del repositorio">
+                 
+                </div>
+                <div class="textArea" >
+                 <textarea id="textArea" name="message" rows="10" cols="30" placeholder= "Acá se carga el código git-hub">
+                      Acá se carga el código Github
+                  </textarea>
+                </div>
+                <div class="botones">
+                  <a class="waves-effect green darken-3 btn">Calificar Actividad</a>
+                  <a class="waves-effect green darken-3 btn">Hacer Comentario</a>
+                </div>
+            </div>
+
+
+            <div class="contenedor-medio" id="crearActividad">
+                  <div class="titulo-actividad">
+                      <h5>Crear actividad</h6>
+                  </div>
+                 <div class="formulario">
+                  <div class="formulario-izquierdo">
+                      <textarea id="textArea-actividad" name="message" rows="10" cols="30">
+                          Descripción
+                      </textarea>
+                  </div>
+                  <div class="formulario-derecho">
+                      <input type="text" name="asignatura" placeholder="Nombre de la asignatura">
+                      <input  type="text" name="fecha" placeholder="Fecha limite">
+                      <input  type="text" name="Lenguaje" placeholder="Lenguaje de programación ">
+                      <a class="waves-effect green darken-3 btn">Añade una rubrica para esta actividad</a>
+                  </div>
+                </div>
+                <div class="enviar"  >
+                     <button class="btn waves-effect green darken-3" type="submit" name="action">Enviar
+                      <i class="material-icons right">send</i>
+                </div>
+            </div>
+            <div class="contenedor-bajo" id="listaEstudiantes">
+              <div class="titulo-actividad">
+                      <h5>Lista de Estudiantes</h6>
+              </div>           
+               <table>
+                <thead>
+                  <tr>
+                      <th data-field="id">Nombre</th>
+                      <th data-field="name">Repositorio</th>
+                       <th data-field="name">Notas</th>
+                      <th data-field="price"></th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>Alvin</td>
+                    <td>Eclair</td>
+                    <td><a href="#">Enviar mensaje</a></td>
+                  </tr>
+                  <tr>
+                    <td>Alan</td>
+                    <td>Jellybean</td>
+                    <td><a href="#">Enviar mensaje</a></td>
+                  </tr>
+                  <tr>
+                    <td>Jonathan</td>
+                    <td>Lollipop</td>
+                    <td><a href="#">Enviar mensaje</a></td>
+                  </tr>
+                </tbody>
+
+                <a href="../pdfs/reporte2-05-10.pdf" download="Reporte2Mayo2010">
+Descargar notas
+</a>
+                </table>
+            </div>
+             
+        </div>
+       
+	 </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="../js/materialize.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+	</body>
+</html>

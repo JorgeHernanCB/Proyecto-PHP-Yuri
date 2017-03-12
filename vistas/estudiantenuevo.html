@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Estudiantes</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/calificacionActividades.css">
+         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+        <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+        <link rel="shortcut icon" href="../img/log1.png">
+	</head>
+	<body>
+  <div class = "contenedor">
+    <div class="contenedor-principal-docente">
+    		<header class="green darken-3">
+    			 <ul id="slide-out" class="side-nav fixed green lighten-5">
+                  <img clas="responsive-img" src="../img/logo.jpg">
+          				<li><a href="#subirActividad">Subir Actividad</a></li>
+                  <li><a href="#calificar">Enviar Mensaje Docente</a></li>
+                  <li><a href="#notas">Notas</a></li>
+                  <li><a href="principal.html">Volver a las noticias</a></li>
+        		</ul>
+              
+    		</header>
+        <div class="contenedor-derecho" id = "calificar">
+              <div class= "contenedor-superior">
+             
+                  <div class="search">
+                            <i class="material-icons right">search</i>
+                            <input class="input-search" type="text" name="buscar-proyecto" placeholder="Buscar proyectos asociados">
+                        </div>
+                         <textarea id="textArea" name="message" rows="10" cols="30" placeholder= "Acá se cargarán los proyectos asociados">
+                             
+                      </textarea>
+                 
+
+                  <div class="botones">
+                      <button class="btn waves-effect green darken-3" type="submit" name="action">Buscar
+                        <i class="material-icons right">send</i>
+                  </div>
+             </div>  
+
+                  <div class="contenedor-medio" id="subirActividad">
+                        <div class="titulo-actividad">
+                            <h5>Subir actividad</h6>
+                        </div>
+                       <div class="formulario">
+                            <div class="formulario-derecho">
+
+                                <input type="text" name="asignatura" placeholder="Usario GitHub">
+                                <input  type="text" name="fecha" placeholder="Link del proyecto">
+                                <input  type="text" name="Lenguaje" placeholder="Lenguaje de programación ">     
+                         
+                                <div class="enviar"  >
+                                     <button class="btn waves-effect green darken-3" type="submit" name="action">Enviar
+                                      <i class="material-icons right">send</i>
+                                </div>
+                           </div>
+                      </div>   
+                        
+              	 </div>
+
+                 <div class="contenedor-bajo" id="notas">
+              <div class="titulo-actividad">
+
+                      <h5>Notas</h6>
+              </div>           
+                   <table>
+                    <thead>
+                      <tr>
+                          <th data-field="id">Actividad</th>
+                          <th data-field="name">Porcentaje</th>
+                           <th data-field="name">Nota</th>
+                          <th data-field="price"></th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>Ejercicio js</td>
+                        <td>20%</td>
+                      </tr>
+                      <tr>
+                        <td>Aplicacion completa css</td>
+                        <td>20%</td>
+                      </tr>
+                    </tbody>
+                    </table>
+            </div>
+             
+        </div>
+       </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="../js/materialize.min.js"></script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/main.js"></script>
+	</body>
+</html>

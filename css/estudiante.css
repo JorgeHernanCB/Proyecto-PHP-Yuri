@@ -1,0 +1,42 @@
+body {
+	background: #2e7d32;
+}
+
+
+
+header>h1 {
+	box-sizing: border-box;
+	padding-top: 7%;
+	margin-left:20%;
+	margin-right:10%;
+	color: white;
+	font-family: 'SanFranciscoDisplayLight',Arial,Tahoma,Verdana;
+}
+
+.contenedor-principal {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 10%;
+}
+
+.search {
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+.contenedor-izquierdo,.contenedor-derecho {
+		background: white;
+		width: 40%;
+		height:600px;
+}
+
+#textArea,#textArea2{
+	height: 200px;
+}
+
+#bt-enviar {
+	margin-left: 35%;
+}
+.input-search {
+	width: 80%;
+}
